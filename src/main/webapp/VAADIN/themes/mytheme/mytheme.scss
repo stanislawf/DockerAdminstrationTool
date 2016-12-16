@@ -33,6 +33,55 @@
 
 @mixin mytheme {
   @include valo;
-
-  // Insert your own theme rules here
+  
+ 	.v-margin-left {
+   		padding-left: 0 !important;
+	}
+	 .v-margin-bottom {
+	    padding-bottom: 37px !important;
+	}
+	 .v-margin-right {
+	    padding-right: 0 !important;
+	}
+	 .v-margin-top {
+	    padding-top: 0 !important;
+	}
+	 
+	/* Basic settings for all sizes */
+	.header {
+	    padding: 5px;
+	    line-height: 36pt;
+	    text-align: center;
+	    background: gray;
+	    color: white;
+	}
+	    
+	/* Small size */
+	.header[width-range~="0-300px"] {
+	    font-size: 14pt;
+	}
+	
+	/* Medium size */
+	.header[width-range~="301px-600px"] {
+	    font-size: 20pt;
+	}
+	
+	/* Anything bigger */
+	.header[width-range~="601px-"] {
+	    font-size: 36pt;
+	}
+	
+	.flexwrap {
+	    min-height: 500px;
+	    position: relative;
+  		padding-top: 40px;
+	}
+	
+	.tabs{
+	    margin-top: 20px;
+	    margin-left: 40px;
+	    margin-right: 40px;
+	    margin-bottom: 20px;
+	    width: auto;
+	}
 }
